@@ -18,4 +18,4 @@ Medium 網站：[Blog](XXX)
 
 # **Demo**
 
-Demo 網站：[Demo](XXX)
+Demo 網站：[Demo](https://dannyhucc.github.io/JavaScript30-danny/)
