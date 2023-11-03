@@ -7,12 +7,12 @@ html {
     box-sizing: border-box;
 }
 
-main.js30>div.container>div.row>div.card {
+div.card {
     margin: 0.5rem;
     padding: 0;
 }
 
-main.js30>div.container>div.row>div.card>a>div.card-body {
+div.card-body {
     display: flex;
     justify-content: center;
 }
