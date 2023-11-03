@@ -1,0 +1,16 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.js30>div.container>div.row>div.card {
+    margin: 0.5rem;
+    padding: 0;
+}
+
+div.js30>div.container>div.row>div.card>a>div.card-body {
+    display: flex;
+    justify-content: center;
+}
