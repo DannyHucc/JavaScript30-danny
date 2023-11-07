@@ -7,6 +7,12 @@ const projects = [
         image: './images/01.png',
         demo: '01-JavaScript-Drum-Kit/index.html'
     },
+    {
+        id: 2,
+        title: '02. JS and CSS Clock.',
+        image: './images/02.png',
+        demo: '02-JS-and-CSS-Clock/index.html'
+    },
 ]
 
 const jsThirty = document.querySelector('#js-thirty')
