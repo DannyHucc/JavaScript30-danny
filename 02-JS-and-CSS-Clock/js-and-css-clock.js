@@ -1,6 +1,5 @@
 'use strict'
 
-
 function handHandler() {
     const secondHand = document.querySelector('.second-hand')
     const minHand = document.querySelector('.min-hand')
@@ -25,9 +24,7 @@ function handHandler() {
     }
 
     setClock() // initial menu
-
-    // timer
-    window.requestAnimationFrame(animationHandler)
+    window.requestAnimationFrame(animationHandler) // timer
 }
 
 handHandler()
