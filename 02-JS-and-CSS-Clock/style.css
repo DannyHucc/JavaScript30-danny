@@ -63,6 +63,7 @@ body {
     display: block;
     width: 10px;
     height: 25%;
+    border-radius: 25%;
     position: absolute;
     left: 50%;
     bottom: 50%;
@@ -75,6 +76,7 @@ body {
     display: block;
     width: 8px;
     height: 40%;
+    border-radius: 15%;
     position: absolute;
     left: 50%;
     bottom: 50%;
@@ -87,6 +89,7 @@ body {
     display: block;
     width: 5px;
     height: 50%;
+    border-radius: 10%;
     position: absolute;
     left: 50%;
     bottom: 50%;
