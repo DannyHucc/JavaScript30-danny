@@ -24,7 +24,6 @@ img {
     background: var(--base);
     border-radius: var(--radius);
     filter: blur(var(--blur)) brightness(var(--brightness)) contrast(var(--contrast)) grayscale(var(--grayscale)) hue-rotate(var(--hue-rotate)) invert(var(--invert)) opacity(var(--opacity)) saturate(var(--saturate)) sepia(var(--sepia));
-    /*    */
 }
 
 .hl {
