@@ -6,13 +6,25 @@
 :root {
     --base: #ffc600;
     --spacing: 10px;
-    --blur: 10px;
+    --radius: 25%;
+    --blur: 1px;
+    --brightness: 100%;
+    --contrast: 100%;
+    --grayscale: 0%;
+    --hue-rotate: 0deg;
+    --invert: 0%;
+    --opacity: 100%;
+    --saturate: 100%;
+    --sepia: 0%;
 }
 
 img {
+    box-sizing: border-box;
     padding: var(--spacing);
     background: var(--base);
-    filter: blur(var(--blur));
+    border-radius: var(--radius);
+    filter: blur(var(--blur)) brightness(var(--brightness)) contrast(var(--contrast)) grayscale(var(--grayscale)) hue-rotate(var(--hue-rotate)) invert(var(--invert)) opacity(var(--opacity)) saturate(var(--saturate)) sepia(var(--sepia));
+    /*    */
 }
 
 .hl {
@@ -30,6 +42,24 @@ body {
 
 .controls {
     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+}
+
+.input {
+    width: 33%;
+    align-items: center;
+    align-content: center;
+}
+
+label {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 40px;
 }
 
 input {
