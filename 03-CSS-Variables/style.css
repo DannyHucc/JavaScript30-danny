@@ -2,6 +2,7 @@
     misc styles, nothing to do with CSS variables
 */
 
+/* same as html */
 :root {
     --base: #ffc600;
     --spacing: 10px;
