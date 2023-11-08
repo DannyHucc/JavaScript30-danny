@@ -13,6 +13,12 @@ const projects = [
         image: './images/02.png',
         demo: '02-JS-and-CSS-Clock/index.html'
     },
+    {
+        id: 3,
+        title: '03. CSS Variables.',
+        image: './images/03.png',
+        demo: '03-CSS-Variables/index.html'
+    },
 ]
 
 const jsThirty = document.querySelector('#js-thirty')
@@ -22,7 +28,7 @@ function generateJsThirty() {
 
     projects.forEach(project => {
         jsThirty.innerHTML += `
-        <div class="card project-id-${project.id}" style="width: 18rem;">
+        <div class="card data-id-${project.id}" style="width: 18rem;">
             <a href="${project.demo}" rel="nofollow" target="_blank">
                 <img src="${project.image}" class="card-img-top" alt="JS Drum Kit">
             
