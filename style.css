@@ -7,12 +7,43 @@ html {
     box-sizing: border-box;
 }
 
+.header-h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.js-thirty-info,
+.my-info {
+    margin: 0 3%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+div.container {
+    margin: 0 1%;
+    padding: 0;
+}
+
+div.js-thirty {
+    display: flex;
+    justify-content: start;
+}
+
 div.card {
-    margin: 0.5rem;
+    width: 24%;
+    margin: 0.5%;
     padding: 0;
 }
 
 div.card-body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
 }

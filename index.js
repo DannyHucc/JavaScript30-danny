@@ -28,7 +28,7 @@ function generateJsThirty() {
 
     projects.forEach(project => {
         jsThirty.innerHTML += `
-        <div class="card data-id-${project.id}" style="width: 18rem;">
+        <div class="card data-id-${project.id}">
             <a href="${project.demo}" rel="nofollow" target="_blank">
                 <img src="${project.image}" class="card-img-top" alt="JS Drum Kit">
             
