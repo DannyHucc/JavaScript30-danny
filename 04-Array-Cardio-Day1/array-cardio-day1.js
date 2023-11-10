@@ -31,24 +31,87 @@ const people = [
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
 
+const questionOne = inventors.filter(inventor => {
+    return inventor.year >= 1500 && inventor.year <= 1600
+})
+console.log('questionOne')
+console.table(questionOne)
+
+
 // Array.prototype.map()
 // 2. Give us an array of the inventors first and last names
+const questionTwo = inventors.map(inventor => {
+    return inventor.first + ' ' + inventor.last
+})
+console.log('questionTwo')
+console.table(questionTwo)
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
+const questionThree = inventors.sort((a, b) => {
+    return a.year - b.year
+})
+console.log('questionThree')
+console.table(questionThree)
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
+const questionFour = inventors.reduce((total, inventor) => {
+    return total + inventor.passed - inventor.year
+}, 0)
+console.log('questionFour')
+console.table(questionFour) // 861
 
 // 5. Sort the inventors by years lived
+inventors.forEach(inventor => {
+    inventor.years = inventor.passed - inventor.year
+})
+const questionFive = inventors.sort((a, b) => {
+    return (a.passed - a.year) - (b.passed - b.year)
+})
+console.log('questionFive')
+console.table(questionFive)
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
-
+// const arrQueSix = []
+// document.querySelectorAll('.mw-category-group ul li a').forEach(name => {
+//     arrQueSix.push(name.title)
+// })
+// console.log(arrQueSix)
+// const questionSix = arrQueSix.filter(title => {
+//     return title.indexOf('de') !== -1
+// })
+// console.log(questionSix)
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+const questionSeven = people.sort((a, b) => {
+    const [aFirst, aLast] = a.split(', ')
+    const [bFirst, bLast] = b.split(', ')
+    return aLast[0] > bLast[0] ? 1 : aLast[0] < bLast[0] ? -1 : 0
+    /* same as 
+    if (aLast[0] > bLast[0]) {
+        return 1
+    } else if (aLast[0] < bLast[0]) {
+        return -1
+    } else {
+        return 0
+    } */
+})
+console.log('questionSeven')
+console.table(questionSeven)
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck'];
+const questionEight = data.reduce((obj, key) => {
+    if (obj[key]) {
+        obj[key]++
+    } else {
+        obj[key] = 1
+    }
+    return obj
+}, {})
+console.log('questionEight')
+console.table(questionEight)
