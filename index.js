@@ -25,6 +25,13 @@ const projects = [
         image: './images/04.png',
         demo: '04-Array-Cardio-Day1/index.html'
     },
+    ,
+    {
+        id: 5,
+        title: '05 Flex Panel Gallery',
+        image: './images/05.png',
+        demo: '05-Flex-Panel-Gallery/index.html'
+    },
 ]
 
 const jsThirty = document.querySelector('#js-thirty')
