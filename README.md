@@ -22,5 +22,5 @@ Youtube 教學網站：[Youtube-WesBos](https://www.youtube.com/watch?v=VuN8qwZo
 | 01. JS Drum Kit | Pressing the keyboard will produce sound and view effects | [Demo](https://dannyhucc.github.io/JavaScript30-danny/01-JavaScript-Drum-Kit/index.html) | [Blog](https://medium.com/@danny_hu/javascript30-01-javascript-drum-kit-challenge-fe819f0e5716) |
 | 02. JS + CSS Clock | Make a clock used CSS and JS | [Demo](https://dannyhucc.github.io/JavaScript30-danny/02-JS-and-CSS-Clock/index.html) | [Blog](https://medium.com/@danny_hu/javascript30-02-js-and-css-clock-challenge-045e3ab46019) |
 | 03. CSS Variables | Change picture style | [Demo](https://dannyhucc.github.io/JavaScript30-danny/03-CSS-Variables/index.html) | [Blog](https://medium.com/@danny_hu/javascript30-03-css-variables-b3b668495d92) |
-| 04. Array Cardio Day1 | Array training | [Demo](https://dannyhucc.github.io/JavaScript30-danny/04-Array-Cardio-Day1/index.html) | [Blog](XXX) |
-| 05. Flex Panel Gallery | asd | [Demo](https://dannyhucc.github.io/JavaScript30-danny/05-Flex-Panel-Gallery/index.html) | [Blog](XXX) |
+| 04. Array Cardio Day1 | Use `reduce()` 、 `sort()` 、 `map()` 、 `filter()` for array training | [Demo](https://dannyhucc.github.io/JavaScript30-danny/04-Array-Cardio-Day1/index.html) | [Blog](XXX) |
+| 05. Flex Panel Gallery | Use `flex` and `transition` to create animation effects | [Demo](https://dannyhucc.github.io/JavaScript30-danny/05-Flex-Panel-Gallery/index.html) | [Blog](XXX) |
