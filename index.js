@@ -21,14 +21,14 @@ const projects = [
     },
     {
         id: 4,
-        title: '04 Array Cardio Day1',
+        title: '04. Array Cardio Day1',
         image: './images/04.png',
         demo: '04-Array-Cardio-Day1/index.html'
     },
     ,
     {
         id: 5,
-        title: '05 Flex Panel Gallery',
+        title: '05. Flex Panel Gallery',
         image: './images/05.png',
         demo: '05-Flex-Panel-Gallery/index.html'
     },
