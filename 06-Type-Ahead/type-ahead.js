@@ -18,6 +18,10 @@ function searchCities() {
         })
     }
 
+    function numberWithCommas(num) {
+        return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
     function displaySearch(target, matchArray) {
         const suggestions = document.querySelector('.suggestions')
         const html = matchArray.map(place => {
@@ -28,7 +32,7 @@ function searchCities() {
             return `
             <li>
                 <span class="name">${cityName}, ${stateName}</span>
-                <span class="population">${place.population}</span>
+                <span class="population">${numberWithCommas(place.population)}</span>
             </li>
             `
         }).join('')
