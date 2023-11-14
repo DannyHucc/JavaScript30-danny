@@ -33,7 +33,7 @@ const projects = [
     },
     {
         id: 6,
-        title: '06 Type Ahead',
+        title: '06. Type Ahead',
         image: './images/06.png',
         demo: '06-Type-Ahead/index.html'
     },
