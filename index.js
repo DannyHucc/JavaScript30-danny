@@ -25,12 +25,17 @@ const projects = [
         image: './images/04.png',
         demo: '04-Array-Cardio-Day1/index.html'
     },
-    ,
     {
         id: 5,
         title: '05. Flex Panel Gallery',
         image: './images/05.png',
         demo: '05-Flex-Panel-Gallery/index.html'
+    },
+    {
+        id: 6,
+        title: '06 Type Ahead',
+        image: './images/06.png',
+        demo: '06-Type-Ahead/index.html'
     },
 ]
 
