@@ -11,6 +11,20 @@ function searchCities() {
         cities.push(...data)
     }
 
+    function findMatches(keyword, cities) {
+        return cities.filter(place => {
+            const regex = new RegExp(keyword, "gi")
+            return place.city.match(regex) || place.state.match(regex)
+        })
+    }
+
+    function inputHandler() {
+        const matchArray = findMatches(this.value, cities)
+    }
+
+    const search = document.querySelector('.search')
+    search.addEventListener('keyup', inputHandler)
+
     getCities()
 }
 
