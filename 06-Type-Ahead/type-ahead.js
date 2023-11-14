@@ -18,8 +18,27 @@ function searchCities() {
         })
     }
 
+    function displaySearch(target, matchArray) {
+        const suggestions = document.querySelector('.suggestions')
+        const html = matchArray.map(place => {
+            const regex = new RegExp(target.value, "gi")
+            const cityName = place.city.replace(regex, `<span class="hl">${target.value}</span>`)
+            const stateName = place.state.replace(regex, `<span class="hl">${target.value}</span>`)
+
+            return `
+            <li>
+                <span class="name">${cityName}, ${stateName}</span>
+                <span class="population">${place.population}</span>
+            </li>
+            `
+        }).join('')
+
+        suggestions.innerHTML = html
+    }
+
     function inputHandler() {
         const matchArray = findMatches(this.value, cities)
+        displaySearch(this, matchArray)
     }
 
     const search = document.querySelector('.search')
