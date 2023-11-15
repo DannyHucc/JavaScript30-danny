@@ -16,12 +16,10 @@ body {
 }
 
 body,
-head,
-.h1 {
+head {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     text-align: center;
-    align-content: center;
 }
