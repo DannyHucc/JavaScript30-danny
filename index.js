@@ -40,7 +40,7 @@ const projects = [
     {
         id: 7,
         title: '07. Array Cardio Day 2',
-        image: './images/06.png',
+        image: './images/07.png',
         demo: '07-Array-Cardio-Day2/index.html'
     },
 ]
