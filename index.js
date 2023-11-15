@@ -37,6 +37,12 @@ const projects = [
         image: './images/06.png',
         demo: '06-Type-Ahead/index.html'
     },
+    {
+        id: 7,
+        title: '07. Array Cardio Day 2',
+        image: './images/06.png',
+        demo: '07-Array-Cardio-Day2/index.html'
+    },
 ]
 
 const jsThirty = document.querySelector('#js-thirty')
