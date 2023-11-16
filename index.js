@@ -43,6 +43,12 @@ const projects = [
         image: './images/07.png',
         demo: '07-Array-Cardio-Day2/index.html'
     },
+    {
+        id: 8,
+        title: '08. Fun with HTML5 Canvas',
+        image: './images/08.png',
+        demo: '08-Fun-with-HTML5-Canvas/index.html'
+    },
 ]
 
 const jsThirty = document.querySelector('#js-thirty')
