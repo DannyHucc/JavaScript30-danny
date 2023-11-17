@@ -31,6 +31,10 @@ const console = {
         if (!this.isDev) return
         window.console.info(...args)
     },
+    assert(...args) {
+        if (!this.isDev) return
+        window.console.assert(...args)
+    },
 }
 
 // Regular
@@ -57,6 +61,13 @@ console.error('error')
 console.info(...dogs)
 
 // Testing
+console.assert(true, 'assert')
+console.assert(false, 'false')
+console.assert("", 'empty content')
+console.assert(0, '0')
+console.assert(NaN, 'NaN')
+console.assert(null, 'null')
+console.assert(undefined, 'undefined')
 
 // clearing
 
