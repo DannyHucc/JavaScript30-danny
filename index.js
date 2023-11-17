@@ -49,6 +49,12 @@ const projects = [
         image: './images/08.png',
         demo: '08-Fun-with-HTML5-Canvas/index.html'
     },
+    {
+        id: 9,
+        title: '09. Dev Tools Domination',
+        image: './images/09.png',
+        demo: '09-Dev-Tools-Domination/index.html'
+    },
 ]
 
 const jsThirty = document.querySelector('#js-thirty')

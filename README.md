@@ -1,4 +1,5 @@
 # **JavaScript30**
+
 ![overall](images/JavaScript30.png)
 
 Javascript30 是一個免費的線上教學課程，為作者加拿大工程師 Wes Bos 所建立。
@@ -25,5 +26,6 @@ Youtube 教學網站：[Youtube-WesBos](https://www.youtube.com/watch?v=VuN8qwZo
 | 04. Array Cardio Day1 | Use `reduce()` 、 `sort()` 、 `map()` 、 `filter()` for array training | [Demo](https://dannyhucc.github.io/JavaScript30-danny/04-Array-Cardio-Day1/index.html) | [Blog](https://medium.com/@danny_hu/javascript30-04-array-cardio-day1-297a518e0267) |
 | 05. Flex Panel Gallery | Use `flex` and `transition` to create animation effects | [Demo](https://dannyhucc.github.io/JavaScript30-danny/05-Flex-Panel-Gallery/index.html) | [Blog](https://medium.com/@danny_hu/javascript30-05-flex-panel-gallery-challenge-f9af4566996e) |
 | 06. Type Ahead | Use the `ajax` method of `Fetch api` to obtain data, query different input keywords, and use `regular expressions` to process strings | [Demo](https://dannyhucc.github.io/JavaScript30-danny/06-Type-Ahead/index.html) | [Blog](https://medium.com/@danny_hu/javascript30-06-type-ahead-challenge-81e59b07851b) |
-| 07. Array Cardio Day2 | Use `some()` 、 `every()` 、 `find()` 、 `findIndex()` for array training | [Demo](https://dannyhucc.github.io/JavaScript30-danny/07-Array-Cardio-Day2/index.html) | [Blog]() |
+| 07. Array Cardio Day2 | Use `some()` 、 `every()` 、 `find()` 、 `findIndex()` for array training | [Demo](https://dannyhucc.github.io/JavaScript30-danny/07-Array-Cardio-Day2/index.html) | [Blog](https://medium.com/@danny_hu/javascript30-07-array-cardio-day2-challenge-12299d4e7c70) |
 | 08. Fun with HTML5 Canvas | Use `Html's canvas tag` and `js` to create a small painter. Effect: Change the color and thickness of the line. | [Demo](https://dannyhucc.github.io/JavaScript30-danny/08-Fun-with-HTML5-Canvas/index.html) | [Blog]() |
+| 09. Dev Tools Domination | Practice commonly used `dev tools` to facilitate debugging when developing js. | [Demo](https://dannyhucc.github.io/JavaScript30-danny/09-Dev-Tools-Domination/index.html) | [Blog]() |
