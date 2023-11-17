@@ -9,7 +9,17 @@ function makeGreen() {
 }
 makeGreen()
 
+const console = {
+    isDev: true,
+    log(...args) {
+        if(!this.isDev) return
+        window.console.log(...args)
+    }
+}
+
 // Regular
+console.log('one', 'two')
+console.log(...dogs)
 
 // Interpolated
 
