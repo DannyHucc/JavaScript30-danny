@@ -70,6 +70,7 @@ console.assert(null, 'null')
 console.assert(undefined, 'undefined')
 
 // clearing
+// CTRL + L
 
 // Viewing DOM Elements
 
