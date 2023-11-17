@@ -47,6 +47,14 @@ const console = {
         if (!this.isDev) return
         window.console.count(...args)
     },
+    time(...args) {
+        if (!this.isDev) return
+        window.console.time(...args)
+    },
+    timeEnd(...args) {
+        if (!this.isDev) return
+        window.console.timeEnd(...args)
+    },
 }
 
 // Regular
@@ -102,4 +110,32 @@ console.count('two')
 console.count('three')
 
 // timing
+const times = 10000000
 
+console.time('i1 j1 out')
+let i1
+let j1
+for (i1 = 1; i1 < times; i1++) {
+    j1 = i1
+}
+console.timeEnd('i1 j1 out')
+
+console.time('i2 j2 in')
+for (let i2 = 1; i2 < times; i2++) {
+    let j2 = i2
+}
+console.timeEnd('i2 j2 in')
+
+console.time('i3 out j3 in')
+let i3
+for (i3 = 1; i3 < times; i3++) {
+    let j3 = i3
+}
+console.timeEnd('i3 out j3 in')
+
+console.time('i4 in j4 out')
+let j4
+for (let i4 = 1; i4 < times; i4++) {
+    j4 = i4
+}
+console.timeEnd('i4 in j4 out')
