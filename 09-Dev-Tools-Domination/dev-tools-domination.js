@@ -26,7 +26,11 @@ const console = {
     error(...args) {
         if (!this.isDev) return
         window.console.error(...args)
-    }
+    },
+    info(...args) {
+        if (!this.isDev) return
+        window.console.info(...args)
+    },
 }
 
 // Regular
@@ -50,6 +54,7 @@ console.warn('warning')
 console.error('error')
 
 // Info
+console.info(...dogs)
 
 // Testing
 
