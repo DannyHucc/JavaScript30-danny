@@ -15,10 +15,9 @@ const console = {
         if (!this.isDev) return
         window.console.log(...args)
     },
-    logStyle(...args) {
+    logStyle() {
         if (!this.isDev) return
         window.console.log('%clog styled', 'font-size:20px; color:red;')
-        window.console.log(...args)
     }
 }
 
