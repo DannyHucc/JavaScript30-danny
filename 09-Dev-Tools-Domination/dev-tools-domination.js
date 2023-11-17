@@ -14,6 +14,11 @@ const console = {
     log(...args) {
         if (!this.isDev) return
         window.console.log(...args)
+    },
+    logStyle(...args) {
+        if (!this.isDev) return
+        window.console.log('%clog styled', 'font-size:20px; color:red;')
+        window.console.log(...args)
     }
 }
 
@@ -29,6 +34,7 @@ const money = 666666
 console.log(`I have ${money} dollars`) // template literals
 
 // Styled
+console.logStyle(...dogs)
 
 // warning!
 
