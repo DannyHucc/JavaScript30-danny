@@ -22,6 +22,10 @@ const console = {
     warn(...args) {
         if (!this.isDev) return
         window.console.warn(...args)
+    },
+    error(...args) {
+        if (!this.isDev) return
+        window.console.error(...args)
     }
 }
 
@@ -43,6 +47,7 @@ console.logStyle(...dogs)
 console.warn('warning')
 
 // Error :|
+console.error('error')
 
 // Info
 
