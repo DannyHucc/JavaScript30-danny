@@ -43,6 +43,10 @@ const console = {
         if (!this.isDev) return
         window.console.table(...args)
     },
+    count(...args) {
+        if (!this.isDev) return
+        window.console.count(...args)
+    },
 }
 
 // Regular
@@ -90,6 +94,12 @@ console.table(dogs)
 console.table(dogs, ['age'])
 
 // counting
+console.count('one')
+console.count('three')
+console.count('two')
+console.count('three')
+console.count('two')
+console.count('three')
 
 // timing
 
