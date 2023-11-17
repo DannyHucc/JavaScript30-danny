@@ -12,7 +12,7 @@ makeGreen()
 const console = {
     isDev: true,
     log(...args) {
-        if(!this.isDev) return
+        if (!this.isDev) return
         window.console.log(...args)
     }
 }
@@ -22,6 +22,11 @@ console.log('one', 'two')
 console.log(...dogs)
 
 // Interpolated
+console.log('My name is %s', 'Danny') // string
+console.log('I have %d dollars', 666666) // decimal
+console.log('I have %f dollars', 66666.6) // float
+const money = 666666
+console.log(`I have ${money} dollars`) // template literals
 
 // Styled
 
