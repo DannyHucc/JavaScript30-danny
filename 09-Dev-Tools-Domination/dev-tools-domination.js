@@ -39,6 +39,10 @@ const console = {
         if (!this.isDev) return
         window.console.dir(...args)
     },
+    table(...args) {
+        if (!this.isDev) return
+        window.console.table(...args)
+    },
 }
 
 // Regular
@@ -82,6 +86,8 @@ console.log(q)
 console.dir(q)
 
 // Grouping together
+console.table(dogs)
+console.table(dogs, ['age'])
 
 // counting
 
