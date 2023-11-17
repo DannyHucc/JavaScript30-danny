@@ -18,6 +18,10 @@ const console = {
     logStyle() {
         if (!this.isDev) return
         window.console.log('%clog styled', 'font-size:20px; color:red;')
+    },
+    warn(...args) {
+        if (!this.isDev) return
+        window.console.warn(...args)
     }
 }
 
@@ -36,6 +40,7 @@ console.log(`I have ${money} dollars`) // template literals
 console.logStyle(...dogs)
 
 // warning!
+console.warn('warning')
 
 // Error :|
 
