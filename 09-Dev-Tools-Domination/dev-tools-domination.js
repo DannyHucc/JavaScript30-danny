@@ -35,6 +35,10 @@ const console = {
         if (!this.isDev) return
         window.console.assert(...args)
     },
+    dir(...args) {
+        if (!this.isDev) return
+        window.console.dir(...args)
+    },
 }
 
 // Regular
@@ -73,6 +77,9 @@ console.assert(undefined, 'undefined')
 // CTRL + L
 
 // Viewing DOM Elements
+const q = document.querySelector("p")
+console.log(q)
+console.dir(q)
 
 // Grouping together
 
