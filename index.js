@@ -55,6 +55,12 @@ const projects = [
         image: './images/09.png',
         demo: '09-Dev-Tools-Domination/index.html'
     },
+    {
+        id: 10,
+        title: '10. Hold Shift and Check Checkboxes',
+        image: './images/09.png',
+        demo: '10-Hold-Shift-and-Check-Checkboxes/index.html'
+    },
 ]
 
 const jsThirty = document.querySelector('#js-thirty')
