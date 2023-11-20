@@ -58,7 +58,7 @@ const projects = [
     {
         id: 10,
         title: '10. Hold Shift and Check Checkboxes',
-        image: './images/09.png',
+        image: './images/10.png',
         demo: '10-Hold-Shift-and-Check-Checkboxes/index.html'
     },
 ]
