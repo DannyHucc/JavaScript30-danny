@@ -6,6 +6,7 @@ function playVideo() {
     const toggle = player.querySelector('.toggle')
     const skipButtons = player.querySelectorAll('.skip')
     const ranges = player.querySelectorAll('.player__slider')
+    const progress = player.querySelector('.progress')
 
     function togglePlay() {
         const method = video.paused ? 'play' : 'pause'
@@ -26,6 +27,11 @@ function playVideo() {
         video[this.name] = this.value;
     }
 
+    function changePlaybackTime(e) {
+        const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
+        video.currentTime = scrubTime;
+    }
+
     // togglePlay
     video.addEventListener('click', togglePlay)
     toggle.addEventListener('click', togglePlay)
@@ -40,6 +46,12 @@ function playVideo() {
     // volume, playbackRate
     ranges.forEach(range => range.addEventListener('change', changeRange))
     ranges.forEach(range => range.addEventListener('mousemove', changeRange))
+
+    let isMousedown = false;
+    progress.addEventListener('click', changePlaybackTime);
+    progress.addEventListener('mousemove', (e) => isMousedown && changePlaybackTime(e))
+    progress.addEventListener('mousedown', () => isMousedown = true)
+    progress.addEventListener('mouseup', () => isMousedown = false)
 }
 
 playVideo()
