@@ -61,6 +61,12 @@ const projects = [
         image: './images/10.png',
         demo: '10-Hold-Shift-and-Check-Checkboxes/index.html'
     },
+    {
+        id: 11,
+        title: '11. Custom Video Player',
+        image: './images/11.png',
+        demo: '11-Custom-Video-Player/index.html'
+    },
 ]
 
 const jsThirty = document.querySelector('#js-thirty')
