@@ -28,9 +28,16 @@ function playVideo() {
         video[this.name] = this.value
     }
 
+    // changePlaybackTime
     function changePlaybackTime(e) {
         const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration
         video.currentTime = scrubTime
+    }
+
+    // progressBarHandler
+    function progressBarHandler() {
+        const percent = (video.currentTime / video.duration) * 100
+        progressBar.style.flexBasis = `${percent}%`
     }
 
     // togglePlay
@@ -48,11 +55,15 @@ function playVideo() {
     ranges.forEach(range => range.addEventListener('change', changeRange))
     ranges.forEach(range => range.addEventListener('mousemove', changeRange))
 
+    //changePlaybackTime
     let isMousedown = false
     progress.addEventListener('click', changePlaybackTime)
     progress.addEventListener('mousemove', (e) => isMousedown && changePlaybackTime(e))
     progress.addEventListener('mousedown', () => isMousedown = true)
     progress.addEventListener('mouseup', () => isMousedown = false)
+
+    // progressBarHandler
+    video.addEventListener('timeupdate', progressBarHandler)
 }
 
 playVideo()
