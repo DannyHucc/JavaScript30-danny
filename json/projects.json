@@ -65,6 +65,12 @@
             "title": "11. Custom Video Player",
             "image": "./images/11.png",
             "demo": "11-Custom-Video-Player/index.html"
+        },
+        {
+            "id": "12",
+            "title": "12. Key Sequence Detection",
+            "image": "./images/12.png",
+            "demo": "12-Key-Sequence-Detection/index.html"
         }
     ]
 }
