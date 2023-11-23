@@ -71,6 +71,12 @@
             "title": "12. Key Sequence Detection",
             "image": "./images/12.webp",
             "demo": "12-Key-Sequence-Detection/index.html"
+        },
+        {
+            "id": "13",
+            "title": "13. Slide in on Scroll",
+            "image": "./images/13.webp",
+            "demo": "13-Slide-in-on-Scroll/index.html"
         }
     ]
 }
