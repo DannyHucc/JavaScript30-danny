@@ -14,3 +14,24 @@ function debounce(func, wait = 20, immediate = true) {
         if (callNow) func.apply(context, args)
     }
 }
+
+function scrollWindow() {
+    function scrollHandler() {
+        const images = document.querySelectorAll('img')
+        const windowTop = window.scrollY
+        const windowBottom = windowTop + window.innerHeight
+
+        images.forEach(image => {
+            const imageMiddle = image.offsetTop + image.height / 2
+            if (windowTop < imageMiddle && imageMiddle < windowBottom) {
+                image.classList.add('active')
+            } else {
+                image.classList.remove('active')
+            }
+        })
+    }
+
+    window.addEventListener('scroll', debounce(scrollHandler))
+}
+
+scrollWindow()
