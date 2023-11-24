@@ -77,6 +77,12 @@
             "title": "13. Slide in on Scroll",
             "image": "./images/13.webp",
             "demo": "13-Slide-in-on-Scroll/index.html"
+        },
+        {
+            "id": "14",
+            "title": "14. JS Reference VS Copy",
+            "image": "./images/14.webp",
+            "demo": "14-JavaScript-References-VS-Copying/index.html"
         }
     ]
 }
