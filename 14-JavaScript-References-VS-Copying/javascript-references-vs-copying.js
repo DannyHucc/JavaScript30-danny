@@ -118,5 +118,27 @@ person.name = 'Danny'
 console.log('person', person)
 console.log('personSpread', personSpread)
 
-
 // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+let wes = {
+    name: 'Wes',
+    age: 100,
+    social: {
+        twitter: '@wesbos',
+        facebook: 'wesbos.developer'
+    }
+}
+
+console.log('4. cloneDeep method Object Assign')
+let cloneDeepObjectAssign = Object.assign({}, wes)
+
+console.log('Object Assign social facebook:')
+console.log('wes:', wes)
+cloneDeepObjectAssign.social.facebook = 'Object Assign social facebook'
+console.log('wes.social.facebook:', wes.social.facebook)
+console.log('cloneDeepObjectAssign.social.facebook:', cloneDeepObjectAssign.social.facebook)
+
+console.log('Object Assign social:')
+console.log('wes:', wes)
+cloneDeepObjectAssign.social = 'Object Assign social'
+console.log('wes.social:', wes.social)
+console.log('cloneDeepObjectAssign.social:', cloneDeepObjectAssign.social)
