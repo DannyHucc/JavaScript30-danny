@@ -79,16 +79,22 @@ console.log('palyersSpread: ', palyersSpread)
 // now when we update it, the original one isn't changed
 
 // The same thing goes for objects, let's say we have a person object
-
 // with Objects
-const person = {
+let person = {
     name: 'Wes Bos',
     age: 80
-};
+}
 
 // and think we make a copy:
-
 // how do we take a copy instead?
+console.log('3. Objects for use object assign')
+console.log('person', person)
+
+let objectAssign = Object.assign({}, person)
+person.name = 'Danny'
+
+console.log('person', person)
+console.log('objectAssign',objectAssign)
 
 // We will hopefully soon see the object ...spread
 
