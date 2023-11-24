@@ -1,6 +1,30 @@
 'use strict'
 
 // start with strings, numbers and booleans
+// numbers
+let num = 1
+let num1 = num
+console.log(num, num1)
+num = 2
+console.log(num, num1)
+// string
+let str = 'str'
+let str1 = str
+console.log(str, str1)
+str = 'str1'
+console.log(str, str1)
+// booleans
+let booleans = false
+let booleans1 = booleans
+console.log(booleans, booleans1)
+booleans = !booleans1
+console.log(booleans, booleans1)
+
+let a = "A"
+let b = "A"
+let c = "A"
+b = "B", c = "C", a += b, a += c
+console.log(a, b, c)
 
 // Let's say we have an array
 const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
