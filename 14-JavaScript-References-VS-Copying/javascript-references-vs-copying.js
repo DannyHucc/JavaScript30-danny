@@ -96,6 +96,17 @@ person.name = 'Danny'
 console.log('person', person)
 console.log('objectAssign',objectAssign)
 
+
+person.name = 'Wes Bos'
+console.log('3. Objects for use json parse and stringify')
+console.log('person', person)
+
+let jsonParseStringify = JSON.parse(JSON.stringify(person))
+person.name = 'Danny'
+
+console.log('person', person)
+console.log('jsonParseStringify', jsonParseStringify)
+
 // We will hopefully soon see the object ...spread
 
 // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
