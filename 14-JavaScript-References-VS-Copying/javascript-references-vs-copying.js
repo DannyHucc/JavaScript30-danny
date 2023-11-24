@@ -1,6 +1,7 @@
 'use strict'
 
 // start with strings, numbers and booleans
+console.log('1.start with strings, numbers and booleans')
 // numbers
 let num = 1
 let num1 = num
@@ -27,20 +28,21 @@ b = "B", c = "C", a += b, a += c
 console.log(a, b, c)
 
 // Let's say we have an array
-const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
-
 // and we want to make a copy of it.
-
+console.log('2. Array for problem')
+const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
+console.log(players)
 // You might think we can just do something like this:
+let palyers2 = players
 
 // however what happens when we update that array?
+palyers2[0] = 'Danny'
 
 // now here is the problem!
+console.log(players, palyers2)
 
 // oh no - we have edited the original array too!
-
 // Why? It's because that is an array reference, not an array copy. They both point to the same array!
-
 // So, how do we fix this? We take a copy instead!
 
 // one way
