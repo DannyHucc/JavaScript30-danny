@@ -61,7 +61,7 @@ console.log('2. Array for ues concat()')
 console.log('players: ', players)
 
 let palyersConcat = [].concat(players)
-palyersConcat[0] = '2. Array for one way'
+palyersConcat[0] = '2. Array for ues concat()'
 
 console.log('players: ', players)
 console.log('palyersConcat: ', palyersConcat)
