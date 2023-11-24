@@ -128,6 +128,7 @@ let wes = {
     }
 }
 
+
 console.log('4. cloneDeep method Object Assign')
 let cloneDeepObjectAssign = Object.assign({}, wes)
 
@@ -137,8 +138,29 @@ cloneDeepObjectAssign.social.facebook = 'Object Assign social facebook'
 console.log('wes.social.facebook:', wes.social.facebook)
 console.log('cloneDeepObjectAssign.social.facebook:', cloneDeepObjectAssign.social.facebook)
 
+
 console.log('Object Assign social:')
 console.log('wes:', wes)
 cloneDeepObjectAssign.social = 'Object Assign social'
 console.log('wes.social:', wes.social)
 console.log('cloneDeepObjectAssign.social:', cloneDeepObjectAssign.social)
+
+wes.social = {
+    twitter: '@wesbos',
+    facebook: 'wesbos.developer'
+}
+console.log('4. cloneDeep method json parse and stringify')
+let cloneDeepJsonParseStringify = JSON.parse(JSON.stringify(wes))
+
+console.log('json parse and stringify social facebook:')
+console.log('wes:', wes)
+cloneDeepJsonParseStringify.social.facebook = 'json parse and stringify social facebook'
+console.log('wes.social.facebook:', wes.social.facebook)
+console.log('cloneDeepJsonParseStringify.social.facebook:', cloneDeepJsonParseStringify.social.facebook)
+
+
+console.log('json parse and stringify social:')
+console.log('wes:', wes)
+cloneDeepJsonParseStringify.social = 'Object Assign social'
+console.log('wes.social:', wes.social)
+console.log('cloneDeepJsonParseStringify.social:', cloneDeepJsonParseStringify.social)
