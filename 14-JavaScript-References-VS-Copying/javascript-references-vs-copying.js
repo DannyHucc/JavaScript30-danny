@@ -94,7 +94,7 @@ let objectAssign = Object.assign({}, person)
 person.name = 'Danny'
 
 console.log('person', person)
-console.log('objectAssign',objectAssign)
+console.log('objectAssign', objectAssign)
 
 
 person.name = 'Wes Bos'
@@ -108,5 +108,15 @@ console.log('person', person)
 console.log('jsonParseStringify', jsonParseStringify)
 
 // We will hopefully soon see the object ...spread
+person.name = 'Wes Bos'
+console.log('3. Objects for use spread')
+console.log('person', person)
+
+let personSpread = { ...person }
+person.name = 'Danny'
+
+console.log('person', person)
+console.log('personSpread', personSpread)
+
 
 // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
