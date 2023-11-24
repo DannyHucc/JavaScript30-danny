@@ -67,6 +67,14 @@ console.log('players: ', players)
 console.log('palyersConcat: ', palyersConcat)
 
 // or use the new ES6 Spread
+console.log('2. Array for ues Spread')
+console.log('players: ', players)
+
+let palyersSpread = [...players]
+palyersSpread[0] = '2. Array for ues Spread'
+
+console.log('players: ', players)
+console.log('palyersSpread: ', palyersSpread)
 
 // now when we update it, the original one isn't changed
 
