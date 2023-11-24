@@ -57,6 +57,14 @@ console.log('players: ', players)
 console.log('palyersSlice: ', palyersSlice)
 
 // or create a new array and concat the old one in
+console.log('2. Array for ues concat()')
+console.log('players: ', players)
+
+let palyersConcat = [].concat(players)
+palyersConcat[0] = '2. Array for one way'
+
+console.log('players: ', players)
+console.log('palyersConcat: ', palyersConcat)
 
 // or use the new ES6 Spread
 
