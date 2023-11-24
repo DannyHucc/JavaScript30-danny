@@ -46,18 +46,15 @@ console.log(players, palyers2)
 // So, how do we fix this? We take a copy instead!
 
 // one way
-console.log('2. Array for ues slice()、splice()')
-console.log(players)
+console.log('2. Array for ues slice()')
+console.log('players: ', players)
 
 let palyersSlice = players.slice()
-let palyersSplice = players.splice(0, players.length)
 
-palyersSlice[0] = '2. Array for one way'
-palyersSplice[0] = '2. Array for one way'
+palyersSlice[0] = '2. Array for ues slice()'
 
 console.log('players: ', players)
 console.log('palyersSlice: ', palyersSlice)
-console.log('palyersSplice: ', palyersSplice)
 
 // or create a new array and concat the old one in
 
