@@ -83,6 +83,12 @@
             "title": "14. JS Reference VS Copy",
             "image": "./images/14.webp",
             "demo": "14-JavaScript-References-VS-Copying/index.html"
+        },
+        {
+            "id": "15",
+            "title": "15. LocalStorage",
+            "image": "./images/15.webp",
+            "demo": "15-LocalStorage/index.html"
         }
     ]
 }
