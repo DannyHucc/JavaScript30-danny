@@ -18,13 +18,20 @@ function createList(plates = [], platesList) {
 function addItem(e) {
     e.preventDefault()
     const input = this.querySelector("[name=item]")
-
     items.push({ text: input.value, done: false })
-    localStorage.setItem('items', JSON.stringify(items))
     this.reset()
+    localStorage.setItem('items', JSON.stringify(items))
+    createList(items, itemsList)
+}
 
+function toggleItem(e) {
+    if (!e.target.matches('input')) return
+    const index = e.target.dataset.index
+    items[index].done = !items[index].done
+    localStorage.setItem('items', JSON.stringify(items))
     createList(items, itemsList)
 }
 
 addItems.addEventListener('submit', addItem)
+itemsList.addEventListener('click', toggleItem)
 createList(items, itemsList)
