@@ -89,6 +89,12 @@
             "title": "15. LocalStorage",
             "image": "./images/15.webp",
             "demo": "15-LocalStorage/index.html"
+        },
+        {
+            "id": "16",
+            "title":"16. Mouse Move Shadow",
+            "image": "./images/16.webp",
+            "demo": "16-Mouse-Move-Shadow/index.html"
         }
     ]
 }
