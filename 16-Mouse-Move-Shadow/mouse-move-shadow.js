@@ -8,7 +8,7 @@ function renderTextShadow() {
         const length = 300
         const blurRadius = 1
         const opacity = 0.6
-        
+
         let { offsetX, offsetY } = e
         if (e.target !== this) {
             offsetX += e.target.offsetLeft
@@ -25,7 +25,7 @@ function renderTextShadow() {
             ${lengthY * -1}px ${lengthX}px ${blurRadius}px rgba(0,0,255,${opacity})
         `
     }
-    
+
     hero.addEventListener('mousemove', mousemoveHandler)
 }
 
