@@ -18,7 +18,12 @@ const bands = [
 
 function renderBands() {
     const unorderedList = document.querySelector('#bands')
-    bands.sort((a, b) => a > b ? 1 : -1)
+
+    function strip(band) {
+        return band.replace(/^(a |the |an )/i, "").trim()
+    }
+
+    bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1)
     unorderedList.innerHTML = bands.map(band => `<li>${band}</li>`).join("")
 }
 
