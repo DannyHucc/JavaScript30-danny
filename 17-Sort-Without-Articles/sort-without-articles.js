@@ -13,4 +13,13 @@ const bands = [
     'Oh, Sleeper',
     'A Skylit Drive',
     'Anywhere But Here',
-    'An Old Dog']
+    'An Old Dog'
+]
+
+function renderBands() {
+    const unorderedList = document.querySelector('#bands')
+    bands.sort((a, b) => a > b ? 1 : -1)
+    unorderedList.innerHTML = bands.map(band => `<li>${band}</li>`).join("")
+}
+
+renderBands()
