@@ -95,6 +95,12 @@
             "title":"16. Mouse Move Shadow",
             "image": "./images/16.webp",
             "demo": "16-Mouse-Move-Shadow/index.html"
+        },
+        {
+            "id": "17",
+            "title": "17. Sort Without Articles",
+            "image": "./images/17.webp",
+            "demo": "17-Sort-Without-Articles/index.html"
         }
     ]
 }
