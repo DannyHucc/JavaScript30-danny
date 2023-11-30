@@ -1,13 +1,13 @@
 'use strict'
 
 function addingUpTimes() {
-    const li = document.querySelectorAll('li')
+    const list = document.querySelectorAll('li')
 
-    const lists = [...li].map(item => item.dataset.time)
+    const times = [...list].map(item => item.dataset.time)
     /* same as above
-    const lists = Array.from(li).map(item => item.dataset.time)
-    const lists = [].map.call(li, item => item.dataset.time)
-    const lists = [].map.apply(li, [item => item.dataset.time]) 
+    const times = Array.from(list).map(item => item.dataset.time)
+    const times = [].map.call(list, item => item.dataset.time)
+    const times = [].map.apply(list, [item => item.dataset.time]) 
     */
 }
 
