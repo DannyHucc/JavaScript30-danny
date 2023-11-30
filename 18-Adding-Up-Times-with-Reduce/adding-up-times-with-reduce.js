@@ -2,6 +2,7 @@
 
 function addingUpTimes() {
     const list = document.querySelectorAll('li')
+    const timeDescribe = document.querySelector('.time-describe')
 
     const times = [...list].map(item => item.dataset.time)
     /* same as above
@@ -20,6 +21,7 @@ function addingUpTimes() {
     const sec = totalSeconds % 60
     const min = Math.floor((totalSeconds % 3600) / 60)
     const hour = Math.floor(totalSeconds / 3600)
+    timeDescribe.innerHTML = `Video total time is ${hour}:${min}:${sec}`
 }
 
 addingUpTimes()

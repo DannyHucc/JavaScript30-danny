@@ -12,7 +12,8 @@ body {
 }
 
 .header,
-.videos-list {
+.videos-list,
+.time-display-fields {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,12 +24,21 @@ body {
     margin: 3% 0;
 }
 
+.time-display-fields {
+    margin: 2% 0;
+}
+
 .title,
-.videos {
+.videos,
+.time-display-fields {
     align-items: center;
     text-align: center;
 }
 
 .title {
+    color: mediumblue;
+}
+
+.time-describe {
     color: mediumblue;
 }
