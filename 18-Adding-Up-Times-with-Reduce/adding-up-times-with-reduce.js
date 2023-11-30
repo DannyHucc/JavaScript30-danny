@@ -14,6 +14,8 @@ function addingUpTimes() {
         const [min, sec] = time.split(':') // 5:43 => [5, 43]
         return min * 60 + sec * 1
     })]
+
+    const totalSeconds = seconds.reduce((prev, next) => prev + next, 0)
 }
 
 addingUpTimes()
