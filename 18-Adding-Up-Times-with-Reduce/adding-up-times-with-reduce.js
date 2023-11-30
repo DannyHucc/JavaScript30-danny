@@ -16,6 +16,10 @@ function addingUpTimes() {
     })]
 
     const totalSeconds = seconds.reduce((prev, next) => prev + next, 0)
+
+    const sec = totalSeconds % 60
+    const min = Math.floor((totalSeconds % 3600) / 60)
+    const hour = Math.floor(totalSeconds / 3600)
 }
 
 addingUpTimes()
