@@ -101,6 +101,12 @@
             "title": "17. Sort Without Articles",
             "image": "./images/17.webp",
             "demo": "17-Sort-Without-Articles/index.html"
+        },
+        {
+            "id": "18",
+            "title": "18. Adding Up Times With Reduce",
+            "image": "./images/18.webp",
+            "demo": "18-Adding-Up-Times-with-Reduce/index.html"
         }
     ]
 }
