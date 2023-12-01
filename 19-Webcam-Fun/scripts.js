@@ -2,7 +2,13 @@ const video = document.querySelector('.player')
 const canvas = document.querySelector('.photo')
 const snap = document.querySelector('.snap')
 const strip = document.querySelector('.strip')
+const types = document.querySelectorAll('.types')
 const ctx = canvas.getContext('2d')
+let type = '2'
+
+function switchType() {
+    return type = this.dataset.type
+}
 
 function getVideo() {
     const constraints = { video: true, audio: false }
@@ -29,9 +35,17 @@ function paintCanvas() {
         let pixels = ctx.getImageData(0, 0, width, height)
 
         // mess with them
-        // pixels = redEffect(pixels)
-        // pixels = rgbSplit(pixels)
-        pixels = greenScreen(pixels)
+        switch (type) {
+            case '1':
+                pixels = redEffect(pixels)
+                break
+            case '2':
+                pixels = rgbSplit(pixels)
+                break
+            case '3':
+                pixels = greenScreen(pixels)
+                break
+        }
 
         // put them back
         ctx.putImageData(pixels, 0, 0)
@@ -93,7 +107,7 @@ function greenScreen(pixels) {
             && green <= levels.gmax
             && blue <= levels.bmax) {
             // take it out!
-            pixelsData[i + 3] = 0;
+            pixelsData[i + 3] = 0
         }
     }
 
@@ -101,4 +115,8 @@ function greenScreen(pixels) {
 }
 
 getVideo()
+
 video.addEventListener('canplay', paintCanvas)
+types.forEach(type => {
+    type.addEventListener('click', switchType)
+})
