@@ -27,3 +27,4 @@ function paintCanvas() {
 }
 
 getVideo()
+video.addEventListener('canplay', paintCanvas)
