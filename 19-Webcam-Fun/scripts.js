@@ -52,10 +52,11 @@ function takePhoto() {
 }
 
 function redEffect(pixels) {
-    for (let i = 0; i < pixels.data.length; i += 4) {
-        pixels.data[i + 0] = pixels.data[i + 0] + 100 // RED
-        pixels.data[i + 1] = pixels.data[i + 1] - 50 // GREEN
-        pixels.data[i + 2] = pixels.data[i + 2] * 0.5 // Blue
+    const pixelsData = pixels.data
+    for (let i = 0; i < pixelsData.length; i += 4) {
+        pixelsData[i + 0] = pixelsData[i + 0] + 100 // RED
+        pixelsData[i + 1] = pixelsData[i + 1] - 50 // GREEN
+        pixelsData[i + 2] = pixelsData[i + 2] * 0.5 // Blue
     }
     return pixels
 }
