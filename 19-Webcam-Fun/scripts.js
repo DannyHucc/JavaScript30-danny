@@ -30,7 +30,8 @@ function paintCanvas() {
 
         // mess with them
         // pixels = redEffect(pixels)
-        pixels = rgbSplit(pixels)
+        // pixels = rgbSplit(pixels)
+        pixels = greenScreen(pixels)
 
         // put them back
         ctx.putImageData(pixels, 0, 0)
@@ -68,6 +69,34 @@ function rgbSplit(pixels) {
         pixelsData[i + 500] = pixelsData[i + 1] // GREEN
         pixelsData[i - 550] = pixelsData[i + 2] // Blue
     }
+    return pixels
+}
+
+function greenScreen(pixels) {
+    const pixelsData = pixels.data
+    const levels = {}
+
+    document.querySelectorAll('.rgb input').forEach((input) => {
+        levels[input.name] = input.value;
+    })
+
+    for (i = 0; i < pixelsData.length; i = i + 4) {
+        red = pixelsData[i + 0]
+        green = pixelsData[i + 1]
+        blue = pixelsData[i + 2]
+        alpha = pixelsData[i + 3]
+
+        if (red >= levels.rmin
+            && green >= levels.gmin
+            && blue >= levels.bmin
+            && red <= levels.rmax
+            && green <= levels.gmax
+            && blue <= levels.bmax) {
+            // take it out!
+            pixelsData[i + 3] = 0;
+        }
+    }
+
     return pixels
 }
 
