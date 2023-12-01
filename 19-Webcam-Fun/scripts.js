@@ -1,7 +1,7 @@
 const video = document.querySelector('.player')
 const canvas = document.querySelector('.photo')
-const strip = document.querySelector('.strip')
 const snap = document.querySelector('.snap')
+const strip = document.querySelector('.strip')
 const ctx = canvas.getContext('2d')
 
 function getVideo() {
@@ -24,6 +24,20 @@ function paintCanvas() {
     return setInterval(() => {
         ctx.drawImage(video, 0, 0, width, height)
     }, 16)
+}
+
+function takePhoto() {
+    // take the data out of the canvas
+    const data = canvas.toDataURL('image/jpeg')
+    const link = document.createElement('a')
+    link.href = data
+    link.setAttribute('download', 'photo')
+    link.innerHTML = `<img src="${data}" alt="photo" />`
+    strip.insertBefore(link, strip.firstChild)
+
+    // played the sound
+    snap.currentTime = 0
+    snap.play()
 }
 
 getVideo()
