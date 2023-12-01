@@ -27,16 +27,24 @@ html {
   clear: both;
 }
 
-.photo {
-  width: 100%;
-  float: left;
+.controls{
+  margin: 2% 0 0 0;
+}
+
+button {
+  margin: 1% 0 1% 1%;
 }
 
 .player {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 200px;
+  border: 3px solid blue;
+  width: 50%;
+  float: left;
+}
+
+.photo {
+  border: 3px solid red;
+  width: 50%;
+  float: right;
 }
 
 /*
