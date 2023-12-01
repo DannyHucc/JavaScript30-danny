@@ -24,7 +24,7 @@ function paintCanvas() {
 
     return setInterval(() => {
         ctx.drawImage(video, 0, 0, width, height)
-        
+
         // take the pixels out
         let pixels = ctx.getImageData(0, 0, width, height)
 
@@ -61,10 +61,11 @@ function redEffect(pixels) {
 }
 
 function rgbSplit(pixels) {
-    for (let i = 0; i < pixels.data.length; i += 4) {
-        pixels.data[i - 150] = pixels.data[i + 0] // RED
-        pixels.data[i + 500] = pixels.data[i + 1] // GREEN
-        pixels.data[i - 550] = pixels.data[i + 2] // Blue
+    const pixelsData = pixels.data
+    for (let i = 0; i < pixelsData.length; i += 4) {
+        pixelsData[i - 150] = pixelsData[i + 0] // RED
+        pixelsData[i + 500] = pixelsData[i + 1] // GREEN
+        pixelsData[i - 550] = pixelsData[i + 2] // Blue
     }
     return pixels
 }
