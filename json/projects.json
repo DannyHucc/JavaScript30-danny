@@ -107,6 +107,12 @@
             "title": "18. Adding Up Times With Reduce",
             "image": "./images/18.webp",
             "demo": "18-Adding-Up-Times-with-Reduce/index.html"
+        },
+        {
+            "id": "19",
+            "title": "19. Webcam Fun",
+            "image": "./images/19.webp",
+            "demo": "19-Webcam-Fun/index.html"
         }
     ]
 }
