@@ -1,3 +1,5 @@
+'use strict'
+
 const video = document.querySelector('.player')
 const canvas = document.querySelector('.photo')
 const snap = document.querySelector('.snap')
