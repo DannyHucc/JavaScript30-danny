@@ -113,6 +113,12 @@
             "title": "19. Webcam Fun",
             "image": "./images/19.webp",
             "demo": "19-Webcam-Fun/index.html"
+        },
+        {
+            "id": "20",
+            "title": "20. Speech Detection",
+            "image": "./images/20.webp",
+            "demo": "20-Speech-Detection/index.html"
         }
     ]
 }
