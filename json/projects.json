@@ -115,10 +115,10 @@
             "demo": "19-Webcam-Fun/index.html"
         },
         {
-            "id": "20",
-            "title": "20. Speech Detection",
-            "image": "./images/20.webp",
-            "demo": "20-Speech-Detection/index.html"
+            "id": "21",
+            "title": "21. Geolocation",
+            "image": "./images/21.webp",
+            "demo": "21-Geolocation/index.html"
         }
     ]
 }
