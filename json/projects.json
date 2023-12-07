@@ -119,6 +119,12 @@
             "title": "21. Geolocation",
             "image": "./images/21.webp",
             "demo": "21-Geolocation/index.html"
+        },
+        {
+            "id": "22",
+            "title": "22. Follow Along Link Highlighter",
+            "image": "./images/22.webp",
+            "demo": "22-Follow-Along-Link-Highlighter/index.html"
         }
     ]
 }
