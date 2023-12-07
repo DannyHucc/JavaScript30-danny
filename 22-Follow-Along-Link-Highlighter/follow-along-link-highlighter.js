@@ -1,12 +1,15 @@
 'use strict'
 
 function followAlongLinkHighlighter() {
+    let now = null
     const links = document.querySelectorAll('a')
     const highlight = document.querySelector('.highlight')
     highlight.style.display = 'none'
 
-    function enterHandler() {
-        const rects = this.getBoundingClientRect()
+    function setPosition() {
+        if (!now) return
+        console.log('end', now)
+        const rects = now.getBoundingClientRect()
         const position = {
             width: rects.width,
             height: rects.height,
@@ -21,9 +24,15 @@ function followAlongLinkHighlighter() {
         highlight.style.left = `${position.left}px`
     }
 
+    function enterHandler() {
+        now = this
+        setPosition()
+    }
+
     links.forEach(link => {
         link.addEventListener('mouseenter', enterHandler)
     })
+    window.addEventListener('resize', setPosition)
 }
 
 followAlongLinkHighlighter()
