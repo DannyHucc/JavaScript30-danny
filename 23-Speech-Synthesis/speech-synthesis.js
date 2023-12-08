@@ -1,7 +1,10 @@
 'use strict'
 
-const msg = new SpeechSynthesisUtterance()
 let voices = []
+const msg = new SpeechSynthesisUtterance()
+msg.text = document.querySelector('[name="text"]').value
+console.log(msg)
+
 const voicesDropdown = document.querySelector('[name="voice"]')
 const options = document.querySelectorAll('[type="range"], [name="text"]')
 const stopButton = document.querySelector('#stop')
@@ -14,4 +17,10 @@ function displayVoicesOption() {
         .join('')
 }
 
+function speak() {
+    speechSynthesis.cancel()
+    speechSynthesis.speak(msg)
+}
+
 speechSynthesis.addEventListener('voiceschanged', displayVoicesOption)
+speakButton.addEventListener('click', speak)
