@@ -1,8 +1,8 @@
 'use strict'
 
 let voices = []
-const msg = new SpeechSynthesisUtterance()
-msg.text = document.querySelector('[name="text"]').value
+const utterance = new SpeechSynthesisUtterance()
+utterance.text = document.querySelector('[name="text"]').value
 
 const voicesDropdown = document.querySelector('[name="voice"]')
 const options = document.querySelectorAll('[type="range"], [name="text"]')
@@ -17,13 +17,13 @@ function displayVoicesOption() {
 }
 
 function setVoice() {
-    msg.voice = voices.find(voice => voice.name.toString() === this.value.toString())
+    utterance.voice = voices.find(voice => voice.name.toString() === this.value.toString())
 }
 
 function speakToggle(startOver = true) {
     speechSynthesis.cancel()
     if (startOver) {
-        speechSynthesis.speak(msg)
+        speechSynthesis.speak(utterance)
     }
 }
 
