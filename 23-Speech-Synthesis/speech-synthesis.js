@@ -20,7 +20,7 @@ function setVoice() {
     msg.voice = voices.find(voice => voice.name.toString() === this.value.toString())
 }
 
-function speak(startOver = true) {
+function speakToggle(startOver = true) {
     speechSynthesis.cancel()
     if (startOver) {
         speechSynthesis.speak(msg)
@@ -29,4 +29,4 @@ function speak(startOver = true) {
 
 speechSynthesis.addEventListener('voiceschanged', displayVoicesOption)
 voicesDropdown.addEventListener('change', setVoice)
-speakButton.addEventListener('click', speak)
+speakButton.addEventListener('click', speakToggle)
