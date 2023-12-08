@@ -125,6 +125,12 @@
             "title": "22. Follow Along Link Highlighter",
             "image": "./images/22.webp",
             "demo": "22-Follow-Along-Link-Highlighter/index.html"
+        },
+        {
+            "id": "23",
+            "title": "23. Speech Synthesis",
+            "image": "./images/23.webp",
+            "demo": "23-Speech-Synthesis/index.html"
         }
     ]
 }
