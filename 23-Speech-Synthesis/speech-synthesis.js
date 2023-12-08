@@ -30,3 +30,4 @@ function speakToggle(startOver = true) {
 speechSynthesis.addEventListener('voiceschanged', displayVoicesOption)
 voicesDropdown.addEventListener('change', setVoice)
 speakButton.addEventListener('click', speakToggle)
+stopButton.addEventListener('click', () => speakToggle(false))
