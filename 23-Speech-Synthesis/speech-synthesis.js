@@ -20,6 +20,10 @@ function setVoice() {
     utterance.voice = voices.find(voice => voice.name.toString() === this.value.toString())
 }
 
+function setOption() {
+    utterance[this.name] = this.value
+}
+
 function speakToggle(startOver = true) {
     speechSynthesis.cancel()
     if (startOver) {
@@ -28,6 +32,9 @@ function speakToggle(startOver = true) {
 }
 
 speechSynthesis.addEventListener('voiceschanged', displayVoicesOption)
+// dropdown and options
 voicesDropdown.addEventListener('change', setVoice)
+options.forEach(option => option.addEventListener('change', setOption))
+// Buttons
 speakButton.addEventListener('click', speakToggle)
 stopButton.addEventListener('click', () => speakToggle(false))
