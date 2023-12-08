@@ -16,10 +16,17 @@ function displayVoicesOption() {
         .join('')
 }
 
-function speak() {
+function setVoice() {
+    msg.voice = voices.find(voice => voice.name.toString() === this.value.toString())
+}
+
+function speak(startOver = true) {
     speechSynthesis.cancel()
-    speechSynthesis.speak(msg)
+    if (startOver) {
+        speechSynthesis.speak(msg)
+    }
 }
 
 speechSynthesis.addEventListener('voiceschanged', displayVoicesOption)
+voicesDropdown.addEventListener('change', setVoice)
 speakButton.addEventListener('click', speak)
