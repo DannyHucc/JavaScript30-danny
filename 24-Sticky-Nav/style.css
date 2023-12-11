@@ -88,3 +88,10 @@ nav a {
   transition: all 0.2s;
   text-transform: uppercase;
 }
+
+.fixedMenu #main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
