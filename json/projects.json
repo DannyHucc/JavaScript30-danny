@@ -131,6 +131,12 @@
             "title": "23. Speech Synthesis",
             "image": "./images/23.webp",
             "demo": "23-Speech-Synthesis/index.html"
+        },
+        {
+            "id": "24",
+            "title": "24. Sticky Nav",
+            "image": "./images/24.webp",
+            "demo": "24-Sticky-Nav/index.html"
         }
     ]
 }
