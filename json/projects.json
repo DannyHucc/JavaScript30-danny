@@ -137,6 +137,12 @@
             "title": "24. Sticky Nav",
             "image": "./images/24.webp",
             "demo": "24-Sticky-Nav/index.html"
+        },
+        {
+            "id": "25",
+            "title": "25. Event Capture Propagation Bubbling and Once",
+            "image": "./images/25.webp",
+            "demo": "25-Event-Capture-Propagation-Bubbling-and-Once/index.html"
         }
     ]
 }
