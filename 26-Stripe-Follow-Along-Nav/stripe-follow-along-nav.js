@@ -7,7 +7,7 @@ function stripeFollowAlongNav() {
     function enterHandler() {
         this.classList.add('trigger-enter')
         setTimeout(() => {
-            this.classList.add('trigger-enter-active')
+            this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active')
         }, 200)
         dropdownBackground.classList.add('open')
 
@@ -20,8 +20,15 @@ function stripeFollowAlongNav() {
         dropdownBackground.style.left = `${dropdownRect.left - navRect.left}px`
     }
 
+    function leaveHandler() {
+        this.classList.remove('trigger-enter')
+        this.classList.remove('trigger-enter-active')
+        dropdownBackground.classList.remove('open')
+    }
+
     lists.forEach(list => {
         list.addEventListener('mouseenter', enterHandler)
+        list.addEventListener('mouseleave', leaveHandler)
     })
 }
 
