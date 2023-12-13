@@ -143,6 +143,12 @@
             "title": "25. Event Capture Propagation Bubbling and Once",
             "image": "./images/25.webp",
             "demo": "25-Event-Capture-Propagation-Bubbling-and-Once/index.html"
+        },
+        {
+            "id": "26",
+            "title": "26. Stripe Follow Along Nav",
+            "image": "./images/26.webp",
+            "demo": "26-Stripe-Follow-Along-Nav/index.html"
         }
     ]
 }
