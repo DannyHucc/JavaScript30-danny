@@ -3,11 +3,15 @@
 function clickAndDrag() {
     const items = document.querySelector('.items')
 
-    function starDrag() { }
+    function starDrag() {
+        items.classList.add('active')
+    }
 
     function dragHandler() { }
 
-    function stopDrag() { }
+    function stopDrag() {
+        items.classList.remove('active')
+    }
 
     items.addEventListener('mousedown', starDrag)
     items.addEventListener('mousemove', dragHandler)
