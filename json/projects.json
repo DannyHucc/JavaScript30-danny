@@ -145,10 +145,10 @@
             "demo": "25-Event-Capture-Propagation-Bubbling-and-Once/index.html"
         },
         {
-            "id": "26",
-            "title": "26. Stripe Follow Along Nav",
-            "image": "./images/26.webp",
-            "demo": "26-Stripe-Follow-Along-Nav/index.html"
+            "id": "27",
+            "title": "27. Click and Drag",
+            "image": "./images/27.webp",
+            "demo": "27-Click-and-Drag/index.html"
         }
     ]
 }
