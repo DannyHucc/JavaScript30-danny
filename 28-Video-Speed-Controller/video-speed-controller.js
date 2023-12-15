@@ -17,6 +17,10 @@ function videoSpeedController() {
         let range = Math.round((percent * (max - min) + min) * 100) / 100 // 0.25~10
         range = range > max ? max : range < min ? min : range
         speedBar.textContent = `${range}x`
+
+        // video playbackRate
+        const video = document.querySelector('video')
+        video.playbackRate = range
     }
 
     speed.addEventListener('mousemove', moveHandler)
