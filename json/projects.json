@@ -149,6 +149,12 @@
             "title": "27. Click and Drag",
             "image": "./images/27.webp",
             "demo": "27-Click-and-Drag/index.html"
+        },
+        {
+            "id": "28",
+            "title": "28. Video Speed Controller",
+            "image": "./images/28.webp",
+            "demo": "28-Video-Speed-Controller/index.html"
         }
     ]
 }
