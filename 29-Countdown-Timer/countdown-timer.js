@@ -6,7 +6,21 @@ function countdownTimer() {
     const input = document.querySelector('#custom')
 
     let timer
+    const timeLeft = document.querySelector('.display__time-left')
     const endTime = document.querySelector('.display__end-time')
+
+    function setCountdown(time) {
+        timer = setInterval(function () {
+            const secLeft = Math.floor((time - Date.now()) / 1000)
+            if (secLeft >= 0) {
+                const min = Math.floor(secLeft / 60)
+                const sec = secLeft % 60
+                timeLeft.textContent = `${min}:${sec}`
+            } else {
+                clearInterval(timer)
+            }
+        }, 16)
+    }
 
     function showEndTime(time) {
         const endDate = new Date(time)
@@ -17,9 +31,11 @@ function countdownTimer() {
     }
 
     function startTimer(sec) {
-        setInterval(timer)
+        clearInterval(timer)
         const now = Date.now()
         const end = parseInt(now) + parseInt(sec * 1000)
+        // set Countdown
+        setCountdown(end)
         // show end time
         showEndTime(end)
     }
