@@ -6,8 +6,21 @@ function countdownTimer() {
     const input = document.querySelector('#custom')
 
     let timer
+    const endTime = document.querySelector('.display__end-time')
+
+    function showEndTime(time) {
+        const endDate = new Date(time)
+        const hour = endDate.getHours()
+        const min = endDate.getMinutes()
+        endTime.textContent = `Back at ${hour}:${min}`
+    }
+
     function startTimer(sec) {
         setInterval(timer)
+        const now = Date.now()
+        const end = parseInt(now) + parseInt(sec * 1000)
+        // show end time
+        showEndTime(end)
     }
 
     function setTimer() {
