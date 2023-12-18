@@ -12,7 +12,8 @@ function countdownTimer() {
         const endDate = new Date(time)
         const hour = endDate.getHours()
         const min = endDate.getMinutes()
-        endTime.textContent = `Back at ${hour}:${min}`
+        const sec = endDate.getSeconds()
+        endTime.textContent = `Back at ${hour}:${min}:${sec}`
     }
 
     function startTimer(sec) {
