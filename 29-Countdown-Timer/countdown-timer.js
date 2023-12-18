@@ -49,8 +49,8 @@ function countdownTimer() {
         e.preventDefault()
         const value = parseInt(this.minutes.value)
         if (!value) return
-        const min = value * 60
-        startTimer(min)
+        const sec = value * 60
+        startTimer(sec)
         this.reset()
     }
 
