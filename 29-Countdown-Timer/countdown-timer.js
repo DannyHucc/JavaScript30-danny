@@ -1,6 +1,5 @@
 'use strict'
 
-
 function countdownTimer() {
     const buttons = document.querySelectorAll('.timer__controls > button')
     const input = document.querySelector('#custom')
