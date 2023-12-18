@@ -5,8 +5,14 @@ function countdownTimer() {
     const buttons = document.querySelectorAll('.timer__controls > button')
     const input = document.querySelector('#custom')
 
+    let timer
+    function startTimer(sec) {
+        setInterval(timer)
+    }
+
     function setTimer() {
         const sec = parseInt(this.dataset.time)
+        startTimer(sec)
     }
 
     function submitHandler(e) {
@@ -14,6 +20,7 @@ function countdownTimer() {
         const value = parseInt(this.minutes.value)
         if (!value) return
         const min = value * 60
+        startTimer(min)
         this.reset()
     }
 
