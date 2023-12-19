@@ -3,9 +3,36 @@
 function whackAMole() {
     const scoreBoard = document.querySelector('.score')
     const button = document.querySelector('.startGame')
+    const moles = [...document.querySelectorAll('.mole')]
+    const status = moles.reduce((prev, current, index) => {
+        prev[index] = false
+        return prev
+    }, {})
+    const molesProxy = new Proxy(status, {
+        get(target, key) {
+            return target[key]
+        },
+        set(target, key, valve) {
+            target[key] = valve
+            moles[key].removeEventListener('click', addScore)
+            if (valve) {
+                moles[key].addEventListener('click', addScore)
+                moles[key].classList.add('up')
+            } else {
+                moles[key].classList.remove('up')
+            }
+        }
+    })
 
     let score = 0
     let timeUp = true
+
+    function addScore() {
+        if (molesProxy[moles.indexOf(this)]) {
+            setScore(score + 1)
+            molesProxy[moles.indexOf(this)] = false
+        }
+    }
 
     function setScore(s) {
         score = s
