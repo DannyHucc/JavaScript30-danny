@@ -62,7 +62,7 @@ function whackAMole() {
         showRandomMole()
         setTimeout(() => {
             timeUp = true
-            alert('Times Up')
+            alert(`Times Up\nYou got ${score} scores`)
         }, 10000)
     }
 
