@@ -161,6 +161,12 @@
             "title": "29. Countdown Timer",
             "image": "./images/29.webp",
             "demo": "29-Countdown-Timer/index.html"
+        },
+        {
+            "id": "30",
+            "title": "30. Whack A Mole",
+            "image": "./images/30.webp",
+            "demo": "30-Whack-A-Mole/index.html"
         }
     ]
 }
