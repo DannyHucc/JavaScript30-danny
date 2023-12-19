@@ -1,6 +1,8 @@
 'use strict'
 
 function whackAMole() {
+    let score = 0
+    let timeUp = true
     const scoreBoard = document.querySelector('.score')
     const button = document.querySelector('.startGame')
     const moles = [...document.querySelectorAll('.mole')]
@@ -24,19 +26,16 @@ function whackAMole() {
         }
     })
 
-    let score = 0
-    let timeUp = true
+    function setScore(s) {
+        score = s
+        scoreBoard.textContent = score
+    }
 
     function addScore() {
         if (molesProxy[moles.indexOf(this)]) {
             setScore(score + 1)
             molesProxy[moles.indexOf(this)] = false
         }
-    }
-
-    function setScore(s) {
-        score = s
-        scoreBoard.textContent = score
     }
 
     function startGame() {
