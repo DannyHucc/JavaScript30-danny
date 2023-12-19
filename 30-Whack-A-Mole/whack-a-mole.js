@@ -14,15 +14,16 @@ function whackAMole() {
         get(target, key) {
             return target[key]
         },
-        set(target, key, valve) {
-            target[key] = valve
+        set(target, key, value) {
+            target[key] = value
             moles[key].removeEventListener('click', addScore)
-            if (valve) {
+            if (value) {
                 moles[key].addEventListener('click', addScore)
                 moles[key].classList.add('up')
             } else {
                 moles[key].classList.remove('up')
             }
+            return true
         }
     })
 
@@ -38,9 +39,27 @@ function whackAMole() {
         }
     }
 
+    const setMole = function (mole, time) {
+        molesProxy[mole] = true
+        setTimeout(() => {
+            if (!timeUp) showRandomMole()
+        }, 500)
+        setTimeout(() => {
+            molesProxy[mole] = false
+        }, time)
+    }
+
+    function showRandomMole() {
+        const mole = Math.floor(Math.random() * moles.length)
+        const time = Math.random() * 1000 + 500 // 1000~1500
+        if (molesProxy[mole]) return showRandomMole()
+        setMole(mole, time)
+    }
+
     function startGame() {
         setScore(0)
         timeUp = false
+        showRandomMole()
         setTimeout(() => {
             timeUp = true
             alert('Times Up')
