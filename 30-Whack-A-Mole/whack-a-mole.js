@@ -39,7 +39,7 @@ function whackAMole() {
         }
     }
 
-    const setMole = function (mole, time) {
+    function setMole(mole, time) {
         molesProxy[mole] = true
         setTimeout(() => {
             if (!timeUp) showRandomMole()
