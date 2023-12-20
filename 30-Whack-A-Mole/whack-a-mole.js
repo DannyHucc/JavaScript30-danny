@@ -57,6 +57,7 @@ function whackAMole() {
     }
 
     function startGame() {
+        if (!timeUp) return
         setScore(0)
         timeUp = false
         showRandomMole()
